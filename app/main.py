@@ -24,4 +24,6 @@ def multiply(c: int, d: int):
 def square(e: int):
     return{"square": e * e} 
 
-print("returning some data")
+@app.get("/data")
+def return():
+    return("returning some data")
